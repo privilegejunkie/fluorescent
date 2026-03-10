@@ -20,6 +20,10 @@ html {
   background: var(--base3);
 }
 
+a {
+  color: var(--blue);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color: var(--base1);
