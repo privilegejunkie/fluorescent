@@ -1,12 +1,20 @@
 html {
     --yellow: #b58900;
+    --yellowt: #b58900A0;
     --orange: #cb4b16;
+    --oranget: #cb4b16A0;
     --red: #dc322f;
+    --redt: #dc322fA0;
     --magenta: #d33682;
+    --magentat: #d33682A0;
     --violet: #6c71c4;
+    --violett: #6c71c4A0;
     --blue: #268bd2;
+    --bluet: #268bd2A0;
     --cyan: #2aa198;
+    --cyant: #2aa198A0;
     --green: #859900;
+    --greent: #859900A0;
     --base03t: #002b36A0;
     /* Dark mode bg */
     --base03: #002b36;
@@ -43,6 +51,7 @@ a.red {
     color: var(--red);
 }
 a.red:hover {
+  filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--red);
 }
 
@@ -50,6 +59,7 @@ a.orange {
     color: var(--orange);
 }
 a.orange:hover {
+  filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--orange);
 }
 
@@ -57,6 +67,7 @@ a.yellow {
     color: var(--yellow);
 }
 a.yellow:hover {
+  filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--yellow);
 }
 
@@ -64,6 +75,7 @@ a.green {
     color: var(--green);
 }
 a.green:hover {
+  filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--green);
 }
 
@@ -71,6 +83,7 @@ a.cyan {
     color: var(--cyan);
 }
 a.cyan:hover {
+  filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--cyan);
 }
 
@@ -78,6 +91,7 @@ a.blue {
     color: var(--blue);
 }
 a.blue:hover {
+  filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--blue);
 }
 
@@ -85,6 +99,7 @@ a.violet {
     color: var(--violet);
 }
 a.violet:hover {
+  filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--violet);
 }
 
