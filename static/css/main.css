@@ -87,16 +87,20 @@ nav ul {
   z-index: -1;
 }
 
-#metadata {
+#header-metadata {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
+#header-metadata-wrapper {
+  margin-top: 6rem;
+}
+
 .avatar img {
     border-radius: 30%;
     width: 128px;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .post {
@@ -140,5 +144,9 @@ nav ul {
       background-color: var(--base03t);
       background-image: url('../image/scanlines-dark.svg');
       background-blend-mode: darken;
+    }
+
+    #header-background {
+      filter: blur(5px);
     }
 }
