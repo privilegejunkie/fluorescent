@@ -24,6 +24,10 @@ a {
   color: var(--blue);
 }
 
+.site-title {
+    animation: flicker-title 5s steps(1, end) infinite;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color: var(--base1);
