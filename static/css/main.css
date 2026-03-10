@@ -32,9 +32,21 @@ a {
     color: var(--blue);
 }
 
+header {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
 main {
   display: flex;
   flex-direction: column;
+}
+
+#metadata {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .post {
