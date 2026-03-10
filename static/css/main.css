@@ -51,9 +51,12 @@ body {
 }
 
 footer {
-  background-color: var(--base3);
+  background-color: var(--base2);
   display: flex;
+  flex-direction: column;
   height: 4rem;
+  margin-top: 4rem;
+  width: 100%;
 }
 
 header {
@@ -156,6 +159,28 @@ nav ul {
   color: var(--magenta);
 }
 
+a.red {
+  color: var(--red);
+}
+a.orange {
+  color: var(--orange);
+}
+a.yellow {
+  color: var(--yellow);
+}
+a.green {
+  color: var(--green);
+}
+a.cyan {
+  color: var(--cyan);
+}
+a.blue {
+  color: var(--blue);
+}
+a.violet {
+  color: var(--violet);
+}
+
 .site-title {
     font-family: 'Courier Prime';
     font-weight: normal;
@@ -186,7 +211,7 @@ nav ul {
     }
 
     footer {
-      background-color: var(--base03);
+      background-color: var(--base02);
     }
 
     .container {
