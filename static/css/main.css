@@ -36,7 +36,7 @@ html {
 }
 
 a {
-    color: var(--blue);
+    color: var(--base1);
 }
 
 body {
@@ -124,8 +124,8 @@ nav ul {
   flex-direction: column;
 }
 
-.post-content a {
-  color: var(--base1);
+.post-content > p {
+  margin-block-start: 0.2rem;
 }
 
 .post-header a {
@@ -164,7 +164,8 @@ nav ul {
 @media (prefers-color-scheme: dark) {
     html {
         background: var(--base03);
-        color: var(--base1);
+        color: var(--base1);a {
+        color: var(--base01);
     }
 
     body {
@@ -175,10 +176,6 @@ nav ul {
 
     .container {
       background: linear-gradient(transparent, var(--base03) 36rem);
-    }
-
-    .post-content a {
-      color: var(--base01);
     }
 
     .site-title {
