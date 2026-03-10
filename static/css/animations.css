@@ -1,3 +1,13 @@
+ @keyframes scanlines {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -540px;
+    }
+}
+    
 @keyframes site-title-crt-flicker {
     0% {
         text-shadow: 0rem 0rem 0rem #dc322f80;

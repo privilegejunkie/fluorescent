@@ -61,6 +61,22 @@ nav ul {
   text-transform: lowercase;
 }
 
+#header-background {
+  animation: linear 10s infinite scanlines;
+  background-image: url(https://64.media.tumblr.com/f3d774cc470c37bbabf5b2bab23423f7/bb3b2e42fd0249ee-1d/s2048x3072_c48188,0,100000,100000/15ee95acc7f46f370d522e799fb57e34e7286898.webp);
+  background-repeat: repeat-y;
+  background-position: top center;
+  mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 200px, transparent 410px);
+  filter: blur(5px) brightness(1.5);
+  height: 380px;
+  width: 820px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 #metadata {
     display: flex;
     flex-direction: column;
