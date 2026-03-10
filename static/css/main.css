@@ -23,6 +23,7 @@ html {
     --base2: #eee8d5;
     /* Light mode bg */
     --base3: #fdf6e3;
+    --base-width: 800px;
     background: var(--base3);
     color: var(--base01);
     font-family: Arial;
@@ -33,14 +34,25 @@ a {
 }
 
 header {
-  display: flex;
   align-self: center;
+  display: flex;
   justify-content: space-between;
+  width: var(--base-width);
 }
 
 main {
   display: flex;
   flex-direction: column;
+  width: var(--base-width);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
 }
 
 #metadata {
