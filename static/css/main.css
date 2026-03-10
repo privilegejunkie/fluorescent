@@ -26,6 +26,7 @@ html {
     --base3: #fdf6e3;
     --base3t: #fdf6e370;
     --base-width: 540px;
+    --header-height: 380px;
     background: var(--base3);
     color: var(--base01);
     display: flex;
@@ -45,13 +46,14 @@ body {
   background-blend-mode: lighten;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex-grow: 1;
   margin: 0;
 }
 
 header {
   align-self: center;
   display: flex;
+  height: var(--header-height);
   justify-content: space-between;
   width: var(--base-width);
 }
@@ -117,7 +119,8 @@ nav ul {
 }
 
 .post {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-item:nth-child(1) a {

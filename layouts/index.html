@@ -10,7 +10,17 @@
             {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
             {{ range $paginator.Pages }}
             <div class="post">
-                {{ .Content }}
+                <div class="post-header">
+                    <a href="{{ .Permalink }}">
+                    <time class="post-date-time"
+                      datetime="{{ .Date.Format '2006-01-02 15:04:05 -0700' }}">
+                      {{ .Date.Format "Jan 2, 2006"}}
+                    </time>
+                  </a>
+                </div>
+                <div class="post-content">
+                  {{ .Content }}
+                </div>
             </div>
             {{ end }}
             {{ template "partials/paginator.html" . }}
