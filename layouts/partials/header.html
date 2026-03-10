@@ -1,0 +1,22 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{- $title := ( .Title ) -}}
+    {{- $siteTitle := ( .Site.Title ) -}}
+    {{- if .IsHome -}}
+      <title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }}- {{ .Site.Params.Subtitle }}{{ end }} </title>
+    {{- else -}}
+      <title>{{ $title }} - {{ $siteTitle }}</title>
+    {{- end -}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eee8d5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#073642" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/main.css" />
+    {{- if isset .Site.Params "customcss" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}{{ .Site.Params.customCSS }}" />
+    {{ end }}
+    <script src="{{ .Site.BaseURL }}js/main.js"></script>
+    {{- if isset .Site.Params "customjs" -}}
+    {{- range .Site.Params.customJS }}<script src="{{ $.Site.BaseURL }}{{ . }}"></script>{{- end }}
+    {{- end }}
+</head>
