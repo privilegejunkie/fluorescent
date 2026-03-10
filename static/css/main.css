@@ -108,9 +108,12 @@ nav ul {
 }
 
 .container {
+  align-items: center;
   background: linear-gradient(transparent, var(--base3) 36rem)
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .post {
