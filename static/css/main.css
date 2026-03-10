@@ -61,6 +61,22 @@ nav ul {
   text-transform: lowercase;
 }
 
+#metadata {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.avatar img {
+    border-radius: 30%;
+    width: 128px;
+    opacity: 0.8;
+}
+
+.post {
+
+}
+
 .nav-item:nth-child(1) {
   color: var(--cyan);
 }
@@ -72,16 +88,6 @@ nav ul {
 }
 .nav-item:nth-child(4) {
   color: var(--orange);
-}
-
-#metadata {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.post {
-
 }
 
 .site-title {
