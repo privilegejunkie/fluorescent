@@ -107,6 +107,12 @@ nav ul {
     opacity: 0.6;
 }
 
+.container {
+  background: linear-gradient(transparent, var(--base3) 36rem)
+  display: flex;
+  flex-direction: column;
+}
+
 .post {
 
 }
@@ -149,13 +155,20 @@ nav ul {
       background-blend-mode: darken;
     }
 
+    .container {
+      background: linear-gradient(transparent, var(--base03) 36rem);
+    }
+
     .site-title {
       animation: site-title-crt-flicker 5s steps(1, end) infinite;
     }
 
+    .site-title:hover {
+      animation: none;
+    }
+
     .site-title a:hover {
       text-shadow: 0.4rem 0.4rem 0.6rem var(--red);
-      animation: none;
     }
 
     #header-background {
