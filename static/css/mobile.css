@@ -2,11 +2,16 @@
 
 }
 @media (max-width: 740px) {
-
+    #header-background {
+        width: 100%;
+    }
 }
 @media (min-width: 541px) {
     html {
         --base-width: 540px;
+    }
+    #header-background {
+        width: 100%;
     }
 }
 
