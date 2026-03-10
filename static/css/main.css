@@ -33,6 +33,11 @@ a {
     color: var(--blue);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   align-self: center;
   display: flex;

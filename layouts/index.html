@@ -2,19 +2,17 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-  <div class="container wrapper">
     {{ partial "header.html" . }}
-
     <main>
-      {{ $pages := where .Site.Pages.ByDate.Reverse "Type" "post" }}
-      {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-      {{ range $paginator.Pages }}
+        {{ $pages := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+        {{ range $paginator.Pages }}
         <div class="post">
-          {{ .Content }}
+            {{ .Content }}
         </div>
-      {{ end }}
-      {{ template "partials/paginator.html" . }}
+        {{ end }}
+        {{ template "partials/paginator.html" . }}
     </main>
-  {{ partial "footer.html" . }}
+    {{ partial "footer.html" . }}
 </body>
 </html>
