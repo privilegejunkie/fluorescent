@@ -42,29 +42,50 @@ a {
 a.red {
     color: var(--red);
 }
+a.red:hover {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--red);
+}
 
 a.orange {
     color: var(--orange);
+}
+a.orange:hover {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--orange);
 }
 
 a.yellow {
     color: var(--yellow);
 }
+a.yellow:hover {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--yellow);
+}
 
 a.green {
     color: var(--green);
+}
+a.green:hover {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--green);
 }
 
 a.cyan {
     color: var(--cyan);
 }
+a.cyan:hover {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--cyan);
+}
 
 a.blue {
     color: var(--blue);
 }
+a.blue:hover {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--blue);
+}
 
 a.violet {
     color: var(--violet);
+}
+a.violet:hover {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--violet);
 }
 
 body {
