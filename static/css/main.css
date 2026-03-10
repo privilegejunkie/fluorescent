@@ -61,6 +61,7 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   width: var(--base-width);
 }
 
@@ -123,6 +124,14 @@ nav ul {
   flex-direction: column;
 }
 
+.post-content a {
+  color: var(--base1);
+}
+
+.post-header a {
+  color: var(--yellow);
+}
+
 .nav-item:nth-child(1) a {
   color: var(--cyan);
 }
@@ -166,6 +175,10 @@ nav ul {
 
     .container {
       background: linear-gradient(transparent, var(--base03) 36rem);
+    }
+
+    .post-content a {
+      color: var(--base01);
     }
 
     .site-title {
