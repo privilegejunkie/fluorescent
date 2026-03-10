@@ -1,27 +1,16 @@
-@media (max-width: 1000px) {
-
-}
-@media (max-width: 740px) {
+@media (max-width: 840px) {
     #header-background {
         width: 100%;
     }
 }
-@media (min-width: 541px) {
+@media (max-width: 740px) {
     html {
         --base-width: 540px;
     }
-    #header-background {
-        width: 100%;
-    }
 }
-
 @media (max-width: 540px) {
     html {
         --base-width: 90vw;
-    }
-    #header-background {
-        animation: linear 10s infinite scanlines;
-        width: 100%;
     }
     .avatar img {
         width: 72px;
