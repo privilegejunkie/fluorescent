@@ -7,6 +7,7 @@ html {
     --blue: #268bd2;
     --cyan: #2aa198;
     --green: #859900;
+    --base03t: #002b36A0;
     /* Dark mode bg */
     --base03: #002b36;
     /* Dark mode highlight */
@@ -23,6 +24,7 @@ html {
     --base2: #eee8d5;
     /* Light mode bg */
     --base3: #fdf6e3;
+    --base3t: #fdf6e370;
     --base-width: 800px;
     background: var(--base3);
     color: var(--base01);
@@ -38,8 +40,12 @@ a {
 
 body {
   align-items: center;
+  background-color: var(--base3t);
+  background-image: url('../image/scanlines-light.svg');
+  background-blend-mode: lighten;
   display: flex;
   flex-direction: column;
+  height: 100%;
   margin: 0;
 }
 
@@ -127,5 +133,11 @@ nav ul {
     html {
         background: var(--base03);
         color: var(--base1);
+    }
+
+    body {
+      background-color: var(--base03t);
+      background-image: url('../image/scanlines-dark.svg');
+      background-blend-mode: darken;
     }
 }
