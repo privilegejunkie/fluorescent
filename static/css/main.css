@@ -125,7 +125,6 @@ nav ul {
 }
 
 .site-title {
-    animation: site-title-crt-flicker 5s steps(1, end) infinite;
     font-family: 'Courier Prime';
     font-weight: normal;
     font-size: 3rem;
@@ -148,6 +147,15 @@ nav ul {
       background-color: var(--base03t);
       background-image: url('../image/scanlines-dark.svg');
       background-blend-mode: darken;
+    }
+
+    .site-title {
+      animation: site-title-crt-flicker 5s steps(1, end) infinite;
+    }
+
+    .site-title a:hover {
+      text-shadow: 0.4rem 0.4rem 0.6rem var(--red);
+      animation: none;
     }
 
     #header-background {
