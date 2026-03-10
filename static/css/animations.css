@@ -1,4 +1,4 @@
-@keyframes flicker-title {
+@keyframes site-title-crt-flicker {
     0% {
         text-shadow: 0rem 0rem 0rem #dc322f80;
         filter: none;

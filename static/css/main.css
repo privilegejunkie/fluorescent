@@ -15,7 +15,6 @@ html {
   --base1: #93a1a1; /* Lightest gray */
   --base2: #eee8d5; /* Light mode highlight */
   --base3: #fdf6e3; /* Light mode bg */
-
   color: var(--base01);
   background: var(--base3);
 }
@@ -25,7 +24,13 @@ a {
 }
 
 .site-title {
-    animation: flicker-title 5s steps(1, end) infinite;
+    animation: site-title-crt-flicker 5s steps(1, end) infinite;
+    color: var(--red);
+    font-family: 'Typewriter FS', serif;
+    font-weight: normal;
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
 }
 
 @media (prefers-color-scheme: dark) {
