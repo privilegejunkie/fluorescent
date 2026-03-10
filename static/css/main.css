@@ -15,11 +15,7 @@ html {
     --base01: #586e75;
     /* Gray - no dark mode */
     --base00: #657b83;
-    /* Gray - no light mode */OFL.txt
-CourierPrime-Bold.ttf
-CourierPrime-BoldItalic.ttf
-CourierPrime-Italic.ttf
-CourierPrime-Regular.ttf
+    /* Gray - no light mode */
     --base0: #839496;
     /* Lightest gray */
     --base1: #93a1a1;
@@ -29,7 +25,7 @@ CourierPrime-Regular.ttf
     --base3: #fdf6e3;
     background: var(--base3);
     color: var(--base01);
-    font: Arial;
+    font-family: Arial;
 }
 
 a {
@@ -38,6 +34,7 @@ a {
 
 main {
   display: flex;
+  flex-direction: column;
 }
 
 .post {
