@@ -112,7 +112,6 @@ nav ul {
   background: linear-gradient(transparent, var(--base3) 36rem);
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 100%;
 }
 
@@ -128,6 +127,9 @@ nav ul {
 }
 .nav-item:nth-child(3) a {
   color: var(--blue);
+}
+.nav-item:nth-child(4) a {
+  color: var(--violet);
 }
 .nav-item:nth-child(4) a {
   color: var(--orange);
