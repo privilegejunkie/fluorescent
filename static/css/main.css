@@ -77,16 +77,16 @@ nav ul {
 
 }
 
-.nav-item:nth-child(1) {
+.nav-item:nth-child(1) a {
   color: var(--cyan);
 }
-.nav-item:nth-child(2) {
+.nav-item:nth-child(2) a {
   color: var(--green);
 }
-.nav-item:nth-child(3) {
+.nav-item:nth-child(3) a {
   color: var(--blue);
 }
-.nav-item:nth-child(4) {
+.nav-item:nth-child(4) a {
   color: var(--orange);
 }
 
