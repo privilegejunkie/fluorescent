@@ -84,7 +84,6 @@ footer {
     display: flex;
     flex-direction: column;
     min-height: 4rem;
-    margin-top: 4rem;
     width: 100%;
 }
 
@@ -95,6 +94,7 @@ h4,
 h5,
 h6 {
     font-family: 'Courier Prime';
+    margin: 0;
 }
 
 header {
@@ -163,11 +163,13 @@ nav ul {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding-bottom: 4rem;
     width: 100%;
 }
 
 .footer-content {
     display: flex;
+    padding: 1rem 0 1rem 0;
     width: var(--base-width);
 }
 
@@ -219,6 +221,19 @@ nav ul {
 
 .site-title a {
     color: var(--red);
+}
+
+.social h4 {
+  font-weight: normal;
+}
+
+.social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.2rem;
 }
 
 @media (prefers-color-scheme: dark) {
