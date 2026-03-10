@@ -26,7 +26,10 @@ html {
     --base-width: 800px;
     background: var(--base3);
     color: var(--base01);
+    display: flex;
+    flex-direction: column;
     font-family: Arial;
+    height: 100%;
 }
 
 a {
@@ -37,6 +40,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 header {
