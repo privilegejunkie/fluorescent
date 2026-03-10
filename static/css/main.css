@@ -61,6 +61,19 @@ nav ul {
   text-transform: lowercase;
 }
 
+.nav-link:nth-child(0) {
+  color: var(--cyan);
+}
+.nav-link:nth-child(1) {
+  color: var(--green);
+}
+.nav-link:nth-child(2) {
+  color: var(--blue);
+}
+.nav-link:nth-child(3) {
+  color: var(--orange);
+}
+
 #metadata {
     display: flex;
     flex-direction: column;

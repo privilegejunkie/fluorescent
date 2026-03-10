@@ -4,8 +4,9 @@
         <nav>
             <ul>
                 {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                <li><a class="nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
                 {{ end }}
+                <li><a class="nav-link" href="{{ .Site.BaseURL }}rss">rss</a></li>
             </ul>
         </nav>
     </div>
