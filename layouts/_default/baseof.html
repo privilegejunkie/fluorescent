@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-    {{ partial "head.html" . }}
-    <body>
-        {{ partial "header.html" . }}
+{{ partial "header.html" . }}
+<body>
+    <main>
+        {{ partial "head.html" . }}
         {{ block "main" . }}{{ end }}
-        {{ partial "footer.html" . }}
-		{{ partial "custom_footer.html" . }}
-    </body>
+    </main>
+    {{ partial "footer.html" . }}
+</body>
 </html>
