@@ -63,7 +63,7 @@ nav ul {
 
 #header-background {
   animation: linear 10s infinite scanlines;
-  background-image: url(https://64.media.tumblr.com/f3d774cc470c37bbabf5b2bab23423f7/bb3b2e42fd0249ee-1d/s2048x3072_c48188,0,100000,100000/15ee95acc7f46f370d522e799fb57e34e7286898.webp);
+  background-image: url('../image/header.webp');
   background-repeat: repeat-y;
   background-position: top center;
   mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 200px, transparent 410px);
