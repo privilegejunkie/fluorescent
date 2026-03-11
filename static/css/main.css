@@ -34,7 +34,7 @@ html {
     --base3: #fdf6e3;
     --base3t: #fdf6e370;
     --base-width: 540px;
-    --header-height: 380px;
+    --header-height: 300px;
     background: var(--base3);
     color: var(--base01);
     display: flex;
@@ -164,7 +164,7 @@ nav ul {
     background-position: top center;
     mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 200px, transparent 410px);
     filter: blur(5px) brightness(1.5);
-    height: 380px;
+    height: var(--header-height);
     width: 820px;
     margin: auto;
     right: 0;
@@ -177,20 +177,20 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-bottom: 1.2rem;
 }
 
 #header-metadata-wrapper {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 6rem 0 4rem 0;
     width: 100%;
 }
 
 .avatar img {
-    border-radius: 30%;
-    width: 128px;
-    opacity: 0.6;
+    width: 100px;
+    opacity: 0.5;
 }
 
 .container {
@@ -280,6 +280,10 @@ nav ul {
 .post-content img {
   height: auto;
   max-width: var(--base-width);
+}
+.post-header {
+    font-family: 'Courier Prime';
+    font-weight: bold;
 }
 
 .site-title {
