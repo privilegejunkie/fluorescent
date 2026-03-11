@@ -184,7 +184,6 @@ nav ul {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    margin: 6rem 0 4rem 0;
     width: 100%;
 }
 
@@ -269,7 +268,9 @@ nav ul {
     display: flex;
     flex-direction: column;
 }
-
+.post a:hover {
+    color: var(--yellow);
+}
 .post-content>p {
     margin-block-start: 0.2rem;
 }
