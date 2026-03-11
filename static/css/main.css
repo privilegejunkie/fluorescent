@@ -117,8 +117,11 @@ body {
 footer {
     align-items: center;
     background-color: var(--base2);
+    border-top: 1px solid var(--orange);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    mask-image: linear-gradient(to left, transparent 10%, black 20%, black 80%, transparent 90%);
     min-height: 4rem;
     width: 100%;
 }
@@ -162,18 +165,19 @@ nav ul {
     background-image: url('../image/header.webp');
     background-repeat: repeat-y;
     background-position: top center;
-    mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 200px, transparent 410px);
     filter: blur(5px) brightness(1.5);
     height: var(--header-height);
-    width: 820px;
-    margin: auto;
-    right: 0;
     left: 0;
+    margin: auto;
+    mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 200px, transparent 410px);
     position: absolute;
+    right: 0;
+    width: 820px;
     z-index: -1;
 }
 
 #header-metadata {
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -300,17 +304,12 @@ nav ul {
     color: var(--red);
 }
 
-.social h4 {
-  font-weight: normal;
-}
-
 .social ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 1rem;
-  margin-top: 0.2rem;
+  list-style-type: none;
+  margin: 0.4rem 0 0 0;
+  padding: 0;
 }
 
 @media (prefers-color-scheme: dark) {
