@@ -273,6 +273,14 @@ nav ul {
 .post-content>p {
     margin-block-start: 0.2rem;
 }
+.post-content video {
+  height: auto;
+  max-width: var(--base-width);
+}
+.post-content img {
+  height: auto;
+  max-width: var(--base-width);
+}
 
 .site-title {
     font-family: 'Courier Prime';
