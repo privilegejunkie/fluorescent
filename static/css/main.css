@@ -193,7 +193,7 @@ nav ul {
 
 .avatar img {
     width: 100px;
-    opacity: 0.5;
+    mask-image: radial-gradient(black, transparent 80%);
 }
 
 .container {
