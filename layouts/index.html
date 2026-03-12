@@ -3,29 +3,27 @@
 {{ partial "head.html" . }}
 
 <body>
-    <div class="container">
-        {{ partial "header.html" . }}
-        <main>
-            {{ $pages := where .Site.Pages.ByDate.Reverse "Type" "post" }}
-            {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-            {{ range $paginator.Pages }}
-            <div class="post">
-                <div class="post-header">
-                    <a href="{{ .Permalink }}">
-                    <time class="post-date-time"
-                      datetime="{{ .Date.Format "2006-01-02 15:04:05 -0600" }}">
-                      {{ .Date.Format "2006-01-02"}}
-                    </time>
-                  </a>
-                </div>
-                <div class="post-content">
-                  {{ .Content }}
-                </div>
+    {{ partial "header.html" . }}
+    <main>
+        {{ $pages := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+        {{ range $paginator.Pages }}
+        <div class="post">
+            <div class="post-header">
+                <a href="{{ .Permalink }}">
+                <time class="post-date-time"
+                  datetime="{{ .Date.Format "2006-01-02 15:04:05 -0600" }}">
+                  {{ .Date.Format "2006-01-02"}}
+                </time>
+              </a>
             </div>
-            {{ end }}
-            {{ template "partials/paginator.html" . }}
-        </main>
-    </div>
+            <div class="post-content">
+              {{ .Content }}
+            </div>
+        </div>
+        {{ end }}
+        {{ template "partials/paginator.html" . }}
+    </main>
     {{ partial "footer.html" . }}
 </body>
 {{ partial "verification.html" . }}

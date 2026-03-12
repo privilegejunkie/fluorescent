@@ -145,10 +145,13 @@ header {
 }
 
 main {
+    align-items: center;
+    background: linear-gradient(transparent, var(--base3) 36rem);
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 2rem;
-    width: var(--base-width);
+    width: 100%;
 }
 
 nav ul {
@@ -194,16 +197,6 @@ nav ul {
 .avatar img {
     width: 100px;
     mask-image: radial-gradient(black, transparent 80%);
-}
-
-.container {
-    align-items: center;
-    background: linear-gradient(transparent, var(--base3) 36rem);
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding-bottom: 4rem;
-    width: 100%;
 }
 
 .footer-content {
@@ -271,6 +264,7 @@ nav ul {
 .post {
     display: flex;
     flex-direction: column;
+    width: var(--base-width);
 }
 .post a:hover {
     color: var(--yellow);
@@ -332,7 +326,7 @@ nav ul {
         background-color: var(--base02);
     }
 
-    .container {
+    main {
         background: linear-gradient(transparent, var(--base03) 36rem);
     }
 
