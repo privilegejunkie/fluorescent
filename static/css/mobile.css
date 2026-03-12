@@ -1,5 +1,12 @@
 @media (max-width: 840px) {
+    html {
+        --header-height: 240px;
+    }
+    footer {
+        mask-image: none;
+    }
     #header-background {
+        mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 100px, transparent 310px);
         width: 100%;
     }
 }
