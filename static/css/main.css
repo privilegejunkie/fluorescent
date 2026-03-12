@@ -33,7 +33,7 @@ html {
     /* Light mode bg */
     --base3: #fdf6e3;
     --base3t: #fdf6e370;
-    --base-width: 540px;
+    --post-width: 540px;
     --header-height: 300px;
     background: var(--base3);
     color: var(--base01);
@@ -123,6 +123,7 @@ footer {
     justify-content: center;
     mask-image: linear-gradient(to left, transparent 10%, black 20%, black 80%, transparent 90%);
     min-height: 4rem;
+    padding-top: 1rem;
     width: 100%;
 }
 
@@ -141,16 +142,18 @@ header {
     display: flex;
     height: var(--header-height);
     justify-content: space-between;
-    width: var(--base-width);
+    padding: 1rem 0 1rem 0;
+    width: var(--post-width);
 }
 
 main {
     align-items: center;
-    background: linear-gradient(transparent, var(--base3) 36rem);
+    background: linear-gradient(transparent, var(--base3) 10rem);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     gap: 2rem;
+    padding: 2rem 0 2rem 0;
     width: 100%;
 }
 
@@ -172,7 +175,7 @@ nav ul {
     height: var(--header-height);
     left: 0;
     margin: auto;
-    mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 200px, transparent 410px);
+    mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 30%, transparent 74%);
     position: absolute;
     right: 0;
     width: 820px;
@@ -202,7 +205,7 @@ nav ul {
 .footer-content {
     display: flex;
     padding: 1rem 0 1rem 0;
-    width: var(--base-width);
+    width: var(--post-width);
 }
 
 .nav-item:nth-child(1n + 1) a {
@@ -264,7 +267,7 @@ nav ul {
 .post {
     display: flex;
     flex-direction: column;
-    width: var(--base-width);
+    width: var(--post-width);
 }
 .post a:hover {
     color: var(--yellow);
@@ -274,11 +277,11 @@ nav ul {
 }
 .post-content video {
   height: auto;
-  max-width: var(--base-width);
+  max-width: var(--post-width);
 }
 .post-content img {
   height: auto;
-  max-width: var(--base-width);
+  max-width: var(--post-width);
 }
 .post-header {
     font-family: 'Courier Prime';
@@ -327,7 +330,7 @@ nav ul {
     }
 
     main {
-        background: linear-gradient(transparent, var(--base03) 36rem);
+        background: linear-gradient(transparent, var(--base03) 10rem);
     }
 
     .site-title {
@@ -343,6 +346,6 @@ nav ul {
     }
 
     #header-background {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.9);
     }
 }

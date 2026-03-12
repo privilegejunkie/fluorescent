@@ -6,18 +6,17 @@
         mask-image: none;
     }
     #header-background {
-        mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 100px, transparent 310px);
         width: 100%;
     }
 }
 @media (max-width: 740px) {
     html {
-        --base-width: 540px;
+        --post-width: 540px;
     }
 }
 @media (max-width: 540px) {
     html {
-        --base-width: 90vw;
+        --post-width: 90vw;
     }
     .avatar img {
         width: 72px;
