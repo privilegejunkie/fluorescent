@@ -263,7 +263,9 @@ nav ul {
   filter: brightness(1.2);
   text-shadow: 0.2rem 0.2rem 0.2rem var(--magentat);
 }
-
+.page {
+  width: var(--post-width);
+}
 .post {
     display: flex;
     flex-direction: column;
