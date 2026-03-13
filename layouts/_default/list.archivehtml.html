@@ -10,7 +10,7 @@
 	{{ end }}
 	
 	{{ $list := (where .Site.Pages "Type" "post") }}
-	<div class="archive">
+	<div class="post">
 		{{ range $list }}
 	
 			<p class="archive-entry">
@@ -24,4 +24,5 @@
 		{{ end }}
 	</div>
 
+{{ end }}
 {{ end }}

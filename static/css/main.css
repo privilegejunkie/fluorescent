@@ -34,7 +34,7 @@ html {
     --base3: #fdf6e3;
     --base3t: #fdf6e370;
     --post-width: 540px;
-    --header-height: 300px;
+    --header-height: 240px;
     background: var(--base3);
     color: var(--base01);
     display: flex;
