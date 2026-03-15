@@ -7,7 +7,6 @@
         background-position: 0 -540px;
     }
 }
-    
 @keyframes site-title-crt-flicker {
     0% {
         text-shadow: 0rem 0rem 0rem #dc322f80;
@@ -102,5 +101,22 @@
     100% {
         text-shadow: 0.2rem 0.2rem 0.3rem #dc322f80;
         filter: none;
+    }
+}
+@keyframes wobble {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(20px, 0px);
+    }
+    50% {
+        transform: translate(0px, -20px);
+    }
+    75% {
+        transform: translate(-20px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
     }
 }

@@ -168,7 +168,7 @@ nav ul {
 }
 
 #header-background {
-    animation: linear 10s infinite scanlines;
+    animation: linear 10s infinite scanlines, 10s linear 0s infinite alternate wobble;
     background-image: url('../image/header.webp');
     background-repeat: repeat-y;
     background-position: top center;
