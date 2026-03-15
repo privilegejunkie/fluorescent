@@ -5,7 +5,7 @@
   {{ partial "microhook-before-post.html" . }}
   {{ end }}
 
-  <div class="post-header">
+  <h3 class="post-header">
     {{ if templates.Exists "partials/microhook-post-byline.html" }}
     {{ partial "microhook-post-byline.html" . }}
     {{ else }}
@@ -16,7 +16,7 @@
     {{ if .Title }}
     <h2 class="p-name post-title">{{ .Title }}</h2>
     {{ end }}
-  </div>
+  </h3>
   <article class="post-content e-content {{ if .Title }}with-title{{ else }}without-title{{ end }}">
     {{ .Content }}
   </article>
