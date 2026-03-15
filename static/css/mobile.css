@@ -1,7 +1,4 @@
 @media (max-width: 840px) {
-    html {
-        --header-height: 240px;
-    }
     footer {
         mask-image: none;
     }
