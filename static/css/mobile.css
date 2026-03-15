@@ -19,6 +19,7 @@
         padding: 0;
     }
     #header-background {
+        animation: linear 10s infinite scanlines;
         transition: 0.3s;
         height: calc(var(--header-height) + 8%);
     }
