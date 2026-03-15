@@ -2,9 +2,6 @@
     footer {
         mask-image: none;
     }
-    #header-background {
-        width: 100%;
-    }
 }
 @media (max-width: 740px) {
     html {
