@@ -175,7 +175,10 @@ nav ul {
     height: var(--header-height);
     left: 0;
     margin: auto;
-    mask-image: radial-gradient(ellipse at center 50% in hsl longer hue, black 30%, transparent 74%);
+    mask-image: url('../image/header.svg');
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: 100%;
     position: absolute;
     right: 0;
     width: 820px;
