@@ -34,6 +34,7 @@ html {
     --base3: #fdf6e3;
     --base3t: #fdf6e370;
     --post-width: 540px;
+    --header-background-height: 300px;
     --header-height: 240px;
     background: var(--base3);
     color: var(--base01);
@@ -172,12 +173,12 @@ nav ul {
     background-repeat: repeat-y;
     background-position: top center;
     filter: blur(5px) brightness(1.5);
-    height: var(--header-height);
+    height: var(--header-background-height);
     left: 0;
     margin: auto;
     mask-image: url('../image/header.svg');
     mask-repeat: no-repeat;
-    mask-position: center center;
+    mask-position: center 80%;
     mask-size: 100%;
     position: absolute;
     right: 0;
