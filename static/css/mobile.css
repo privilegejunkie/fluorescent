@@ -1,16 +1,31 @@
 @media (max-width: 840px) {
+    header { 
+        transition: 0.3s;
+    }
     footer {
         mask-image: none;
+    }
+    #header-background {
+        transition: 0.3s;
+        width: 100%;
     }
 }
 @media (max-width: 740px) {
     html {
         --post-width: 540px;
     }
+    #header-background {
+        transition: 0.3s;
+        height: calc(var(--header-height) + 8%);
+    }
 }
 @media (max-width: 540px) {
     html {
-        --post-width: 90vw;
+        --post-width: 90vw
+    }
+    #header-background {
+        transition: 0.3s;
+        height: calc(var(--header-height) + 0%);
     }
     .avatar img {
         width: 72px;
@@ -24,8 +39,9 @@
     header {
         width: auto;
     }
-    #metadata h1 {
-        align-self: center;
+    #header-background {
+        transition: 0.3s;
+        height: calc(var(--header-height) - 5%);
     }
     .avatar {
         display: none;
