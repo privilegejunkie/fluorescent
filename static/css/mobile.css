@@ -51,6 +51,10 @@
         transition: 0.3s;
         height: calc(var(--header-height) - 5%);
     }
+    #header-metadata {
+        transition: 0.3s;
+        align-items: center;
+    }
     .avatar {
         display: none;
     }

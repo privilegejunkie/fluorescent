@@ -187,7 +187,6 @@ nav ul {
 }
 
 #header-metadata {
-    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
