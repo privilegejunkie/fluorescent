@@ -1,30 +1,20 @@
 {{ define "main" }}
-<div class="post h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
-
-  {{ if templates.Exists "partials/microhook-before-post.html" }}
-  {{ partial "microhook-before-post.html" . }}
-  {{ end }}
-
+<div class="post">
   <h3 class="post-header">
-    {{ if templates.Exists "partials/microhook-post-byline.html" }}
-    {{ partial "microhook-post-byline.html" . }}
-    {{ else }}
-    <div class="post-date-wrapper">
-    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ partial "dateformat/long" . }}</time>
+    <div class="post-header">
+      <time class="post-date-time"
+        datetime="{{ .Date.Format "2006-01-02 15:04:05 -0600" }}">
+        {{ .Date.Format "2006-01-02"}}
+      </time>
     </div>
     {{ end }}
     {{ if .Title }}
     <h2 class="p-name post-title">{{ .Title }}</h2>
     {{ end }}
   </h3>
-  <article class="post-content e-content {{ if .Title }}with-title{{ else }}without-title{{ end }}">
+  <article class="post-content">
     {{ .Content }}
   </article>
-
-  {{ if templates.Exists "partials/microhook-after-post.html" }}
-  {{ partial "microhook-after-post.html" . }}
-  {{ end }}
-
 </div>
 
 <div class="content-meta">
