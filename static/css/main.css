@@ -124,7 +124,7 @@ footer {
     justify-content: center;
     mask-image: linear-gradient(to left, transparent 10%, black 20%, black 80%, transparent 90%);
     min-height: 4rem;
-    padding-top: 1rem;
+    padding: 1rem 0 1rem 0;
     width: 100%;
 }
 
@@ -210,6 +210,32 @@ nav ul {
     padding: 1rem 0 1rem 0;
     width: var(--post-width);
 }
+
+.photogrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  margin: 2rem 4rem 3rem 4rem;
+}
+  .photogrid img {
+    background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
+    border-radius: 0.2rem;
+    box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
+    border: 0.25rem solid var(--base2);
+    margin: 1rem;
+    max-width: 16rem;
+    transition: transform .2s;
+  }
+  .photogrid a:nth-child(odd) img {
+    transform: rotate(1deg);
+  }
+  .photogrid a:nth-child(even) img {
+    transform: rotate(-1deg);
+  }
+  .photogrid a img:hover {
+    transform: scale(1.2) rotate(0deg);
+  }
 
 .nav-item:nth-child(1n + 1) a {
     color: var(--cyan);
@@ -331,6 +357,10 @@ nav ul {
 
     main {
         background: linear-gradient(transparent, var(--base03) 10rem);
+    }
+    
+    .photogrid img {
+        border: 0.25rem solid var(--base02);
     }
 
     .site-title {
