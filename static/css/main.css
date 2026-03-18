@@ -277,8 +277,8 @@ nav ul {
         transition: transform .2s;
     }
     .photogrid a img:hover {
-        border-color: var(--orange);
-        box-shadow: 0.2rem 0.2rem 0.2rem var(--oranget);
+        border-color: var(--yellow);
+        box-shadow: 0.2rem 0.2rem 0.2rem var(--yellowt);
     }
 .post {
     display: flex;
