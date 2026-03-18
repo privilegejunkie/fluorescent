@@ -314,7 +314,15 @@ nav ul {
     font-family: 'Courier Prime';
     font-weight: bold;
 }
-
+.single {
+    margin-bottom: 1rem;
+}
+.single time {
+    color: var(--base2)
+}
+.post-title {
+    color: var(--yellow);
+}
 .site-title {
     font-family: 'Courier Prime';
     font-weight: normal;
@@ -323,7 +331,6 @@ nav ul {
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
     white-space: nowrap;
 }
-
 .site-title a {
     color: var(--red);
 }
@@ -366,6 +373,10 @@ nav ul {
     
     .post::after {
         color: var(--base01);
+    }
+    
+    .single time {
+        color: var(--base1);
     }
 
     .site-title {

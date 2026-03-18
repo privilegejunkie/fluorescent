@@ -1,16 +1,14 @@
 {{ define "main" }}
 <div class="post">
-  <h3 class="post-header">
-    <div class="post-header">
-      <time class="post-date-time"
-        datetime="{{ .Date.Format "2006-01-02 15:04:05 -0600" }}">
-        {{ .Date.Format "2006-01-02"}}
-      </time>
-    </div>
+  <div class="post-header single">
     {{ if .Title }}
-    <h2 class="p-name post-title">{{ .Title }}</h2>
+    <h2 class="post-title">{{ .Title }}</h2>
     {{ end }}
-  </h3>
+    <time class="post-date-time"
+      datetime="{{ .Date.Format "2006-01-02 15:04:05 -0600" }}">
+      {{ .Date.Format "2006-01-02"}}
+    </time>
+  </div>
   <article class="post-content">
     {{ .Content }}
   </article>
