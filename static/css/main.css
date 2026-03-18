@@ -1,4 +1,5 @@
 html {
+    /* base solarized colors */
     --yellow: #b58900;
     --yellowt: #b58900A0;
     --orange: #cb4b16;
@@ -16,28 +17,30 @@ html {
     --green: #859900;
     --greent: #859900A0;
     --base03t: #002b36A0;
-    /* Dark mode bg */
     --base03: #002b36;
-    /* Dark mode highlight */
     --base02: #073642;
-    /* Darkest gray */
     --base01: #586e75;
-    /* Gray - no dark mode */
     --base00: #657b83;
-    /* Gray - no light mode */
     --base0: #839496;
-    /* Lightest gray */
     --base1: #93a1a1;
-    /* Light mode highlight */
     --base2: #eee8d5;
-    /* Light mode bg */
     --base3: #fdf6e3;
     --base3t: #fdf6e370;
+    
+    /* colors */
+    --color: var(--base01);
+    --background: var(--base3);
+    --body-background: var(--base3t);
+    --link: var(--base1);
+    --highlight: var(--base2);
+    
+    /* sizes */
     --post-width: 540px;
     --header-background-height: 300px;
     --header-height: 240px;
-    background: var(--base3);
-    color: var(--base01);
+    
+    background: var(--background);
+    color: var(--color);
     display: flex;
     flex-direction: column;
     font-family: Arial;
@@ -45,7 +48,7 @@ html {
 }
 
 a {
-    color: var(--base1);
+    color: var(--link);
 }
 
 a.red {
@@ -106,7 +109,7 @@ a.violet:hover {
 
 body {
     align-items: center;
-    background-color: var(--base3t);
+    background-color: var(--body-background);
     background-image: url('../image/scanlines-light.svg');
     background-blend-mode: lighten;
     display: flex;
@@ -117,7 +120,7 @@ body {
 
 footer {
     align-items: center;
-    background-color: var(--base2);
+    background-color: var(--background);
     border-top: 1px solid var(--orange);
     display: flex;
     flex-direction: column;
@@ -149,7 +152,7 @@ header {
 
 main {
     align-items: center;
-    background: linear-gradient(transparent, var(--base3) 10rem);
+    background: linear-gradient(transparent, var(--background) 10rem);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -271,7 +274,7 @@ nav ul {
     .photogrid img {
         background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
         box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
-        border: 0.1rem solid var(--base2);
+        border: 0.1rem solid var(--highlight);
         margin: 1rem;
         max-width: 16rem;
         transition: transform .2s;
@@ -288,7 +291,7 @@ nav ul {
 .post::after {
     content: '␊';
     text-align: left;
-    color: var(--base1);
+    color: var(--link);
     font-weight: bold;
 }
 .post a:hover {
@@ -318,7 +321,7 @@ nav ul {
     margin-bottom: 1rem;
 }
 .single time {
-    color: var(--base1)
+    color: var(--link)
 }
 .post-title {
     color: var(--yellow);
@@ -345,50 +348,25 @@ nav ul {
 
 @media (prefers-color-scheme: dark) {
     html {
-        background: var(--base03);
-        color: var(--base1);
-    }
-
-    a {
-        color: var(--base01);
+        --color: var(--base1);
+        --background: var(--base03);
+        --body-background: var(--base03t);
+        --link: var(--base01);
+        --highlight: var(--base02);
     }
 
     body {
-        background-color: var(--base03t);
         background-image: url('../image/scanlines-dark.svg');
         background-blend-mode: darken;
     }
 
-    footer {
-        background-color: var(--base02);
-    }
-
-    main {
-        background: linear-gradient(transparent, var(--base03) 10rem);
-    }
-    
-    .photogrid img {
-        border-color: var(--base02);
-    }
-    
-    .post::after {
-        color: var(--base01);
-    }
-    
-    .single time {
-        color: var(--base01);
-    }
-
-    .site-title {
+    .site-title a {
         animation: site-title-crt-flicker 5s steps(1, end) infinite;
-    }
-
-    .site-title:hover {
-        animation: none;
     }
 
     .site-title a:hover {
         text-shadow: 0.4rem 0.4rem 0.6rem var(--red);
+        animation: none;
     }
 
     #header-background {
