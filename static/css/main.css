@@ -318,7 +318,7 @@ nav ul {
     margin-bottom: 1rem;
 }
 .single time {
-    color: var(--base2)
+    color: var(--base1)
 }
 .post-title {
     color: var(--yellow);
@@ -376,7 +376,7 @@ nav ul {
     }
     
     .single time {
-        color: var(--base1);
+        color: var(--base01);
     }
 
     .site-title {
