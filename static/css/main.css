@@ -285,6 +285,12 @@ nav ul {
     flex-direction: column;
     width: var(--post-width);
 }
+.post::after {
+    content: '␊';
+    text-align: left;
+    color: var(--base1);
+    font-weight: bold;
+}
 .post a:hover {
     color: var(--yellow);
     filter: brightness(1.2);
@@ -292,6 +298,9 @@ nav ul {
 }
 .post-content>p {
     margin-block-start: 0.2rem;
+}
+.post-content p:last-child {
+    margin-bottom: 0;
 }
 .post-content video {
   height: auto;
@@ -353,6 +362,10 @@ nav ul {
     
     .photogrid img {
         border-color: var(--base02);
+    }
+    
+    .post::after {
+        color: var(--base01);
     }
 
     .site-title {
