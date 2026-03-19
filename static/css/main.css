@@ -309,10 +309,11 @@ nav ul {
     width: var(--post-width);
 }
 .post::after {
-    content: '␊';
+    content: '-rwx---r--';
     text-align: left;
     color: var(--link);
-    font-weight: bold;
+    font-family: Courier Prime;
+    font-size:0.8rem;
 }
 .post a:hover {
     color: var(--yellow);
