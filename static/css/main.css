@@ -275,6 +275,17 @@ time {
     font-size: 0.8rem;
     text-align: left;
 }
+.post a {
+    color: var(--link);
+}
+.post a:hover {
+    color: var(--yellow);
+    filter: none;
+    text-shadow: none;
+}
+.post a:has(time):hover {
+    color: var(--cyan);
+}
 .post .single {
     margin: 2rem 0 2rem 0;
 }
