@@ -1,11 +1,12 @@
 @media (max-width: 840px) {
-    header { 
+    header {
         transition: 0.3s;
     }
     footer {
         mask-image: none;
     }
     #header-background {
+        animation: linear 10s infinite scanlines;
         transition: 0.3s;
         width: 100%;
     }
