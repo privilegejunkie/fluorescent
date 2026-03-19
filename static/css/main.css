@@ -305,6 +305,7 @@ nav ul {
 .post {
     display: flex;
     flex-direction: column;
+    margin: var(--post-margin-top) 0 var(--post-margin-bottom) 0;
     width: var(--post-width);
 }
 .post::after {
@@ -317,6 +318,9 @@ nav ul {
     color: var(--yellow);
     filter: brightness(1.2);
     text-shadow: 0.1rem 0.1rem 0.2rem var(--yellowt);
+}
+.post .single {
+    margin: 2rem 0 2rem 0;
 }
 .post-content>p {
     margin-block-start: 0.2rem;
@@ -335,9 +339,12 @@ nav ul {
 .post-header {
     font-family: 'Courier Prime';
     font-weight: bold;
+    margin-bottom: var(--post-header-margin-bottom);
 }
-.single {
-    margin-bottom: 1rem;
+.single-margins {
+    --post-margin-top: 2rem;
+    --post-margin-bottom: 2rem;
+    --post-header-margin-bottom: 1rem;
 }
 .single time {
     color: var(--link)
