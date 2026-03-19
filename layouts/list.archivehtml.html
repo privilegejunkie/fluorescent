@@ -1,3 +1,6 @@
+{{ define "header" }}
+    {{ partial "mini_header.html" . }}
+{{ end }}
 {{ define "main" }}
 
 	{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
@@ -16,7 +19,7 @@
 			<p class="archive-entry">
 				<a href="{{ .Permalink }}" class="post-header"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "2006-01-02" }}</time></a>:
 				{{ if .Title }}
-					<span class="archive-title"><b>{{ .Title }}</b></span> 
+					<span class="archive-title"><b>{{ .Title }}</b></span>
 				{{ end }}
 				<span class="archive-summary">{{ .Summary | truncate 50 }}</span>
 			</p>

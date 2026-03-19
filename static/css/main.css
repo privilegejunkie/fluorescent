@@ -159,8 +159,7 @@ header.mini .site-title {
 header.mini #header-background {
     height: 100px;
 }
-
-header.single #header-metadata {
+header.mini #header-metadata {
     align-items: center;
     display: flex;
     gap: 0.5rem;
