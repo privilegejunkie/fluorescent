@@ -175,7 +175,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    gap: 2rem;
+    gap: 3rem;
     padding: 2rem 0 2rem 0;
     width: 100%;
 }
