@@ -150,6 +150,24 @@ header {
     width: var(--post-width);
 }
 
+header.mini {
+    height: 60px;
+}
+header.mini .site-title {
+    font-size: 1.4rem;
+}
+header.mini #header-background {
+    height: 100px;
+}
+
+header.single #header-metadata {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
 main {
     align-items: center;
     background: linear-gradient(transparent, var(--background) 10rem);

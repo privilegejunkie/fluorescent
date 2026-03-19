@@ -1,0 +1,16 @@
+<header class="mini">
+    <div id="header-background"></div>
+    <div id="header-metadata-wrapper">
+      <div id="header-metadata">
+          <h1 class="site-title"><a id="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+          <nav>
+              <ul>
+                  {{ range .Site.Menus.main }}
+                  <li class="nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                  <li class="nav-item"><a href="{{ .Site.BaseURL }}rss">rss</a></li>
+              </ul>
+          </nav>
+      </div>
+    </div>
+</header>
