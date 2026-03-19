@@ -26,6 +26,8 @@ html {
     --base2: #eee8d5;
     --base3: #fdf6e3;
     --base3t: #fdf6e370;
+    --selectionb2: #eee8d5FE;
+    --selectionb02: #073642FE;
     
     /* colors */
     --color: var(--base01);
@@ -34,6 +36,7 @@ html {
     --link: var(--base1);
     --link-shadow: var(--yellowt);
     --highlight: var(--base2);
+    --selection: var(--selectionb2);
     
     /* sizes */
     --post-width: 540px;
@@ -51,6 +54,10 @@ html {
     flex-direction: column;
     font-family: Arial;
     height: 100%;
+}
+
+::selection {
+    background-color: var(--selection);
 }
 
 a {
@@ -108,7 +115,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     mask-image: linear-gradient(to left, transparent 10%, black 20%, black 80%, transparent 90%);
-    margin-top: 1rem;
     min-height: 4rem;
     padding: 1rem 0 1rem 0;
     width: 100%;
@@ -154,6 +160,7 @@ main {
     flex-direction: column;
     flex-grow: 1;
     gap: 3rem;
+    padding-bottom: 1rem;
     width: 100%;
 }
 
@@ -338,6 +345,7 @@ time {
         --body-background-image: url('../image/scanlines-dark.svg');
         --body-background-blend-mode: darken;
         --header-background-filter: blur(5px) brightness(0.9);
+        --selection: var(--selectionb02);
     }
 
     .site-title a {
