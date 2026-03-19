@@ -283,12 +283,6 @@ time {
     filter: none;
     text-shadow: none;
 }
-.post a:has(time) {
-    color: var(--cyan);
-}
-.post a:has(time):hover {
-    color: var(--cyan);
-}
 .post .single {
     margin: 2rem 0 2rem 0;
 }
