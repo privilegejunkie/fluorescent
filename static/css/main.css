@@ -40,6 +40,11 @@ html {
     --header-background-height: 300px;
     --header-height: 240px;
     
+    /* effects */
+    --body-background-image: url('../image/scanlines-light.svg');
+    --body-background-blend-mode: lighten;
+    --header-background-filter: blur(5px) brightness(1.5);
+    
     background: var(--background);
     color: var(--color);
     display: flex;
@@ -87,8 +92,8 @@ a.yellow {
 body {
     align-items: center;
     background-color: var(--body-background);
-    background-image: url('../image/scanlines-light.svg');
-    background-blend-mode: lighten;
+    background-image: var(--body-background-image);
+    background-blend-mode: var(--body-background-blend-mode);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -161,10 +166,14 @@ nav ul {
     text-transform: lowercase;
 }
 
+time {
+    color: var(--link);
+}
+
 #header-background {
     animation: linear 10s infinite scanlines, 10s linear 0s infinite alternate wobble;
     background: url('../image/header.webp') top center repeat-y;
-    filter: blur(5px) brightness(1.5);
+    filter: var(--header-background-filter);
     height: var(--header-background-height);
     left: 0;
     margin: auto;
@@ -291,9 +300,6 @@ nav ul {
     --post-margin-bottom: 2rem;
     --post-header-margin-bottom: 1rem;
 }
-.single time {
-    color: var(--link)
-}
 .post-title {
     color: var(--yellow);
 }
@@ -329,11 +335,9 @@ nav ul {
         --body-background: var(--base03t);
         --link: var(--base01);
         --highlight: var(--base02);
-    }
-
-    body {
-        background-image: url('../image/scanlines-dark.svg');
-        background-blend-mode: darken;
+        --body-background-image: url('../image/scanlines-dark.svg');
+        --body-background-blend-mode: darken;
+        --header-background-filter: blur(5px) brightness(0.9);
     }
 
     .site-title a {
@@ -343,9 +347,5 @@ nav ul {
     .site-title a:hover {
         text-shadow: 0.4rem 0.4rem 0.6rem var(--red);
         animation: none;
-    }
-
-    #header-background {
-        filter: blur(5px) brightness(0.9);
     }
 }
