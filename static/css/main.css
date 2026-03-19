@@ -275,11 +275,6 @@ time {
     font-size: 0.8rem;
     text-align: left;
 }
-.post a:hover {
-    color: var(--yellow);
-    filter: brightness(1.2);
-    text-shadow: 0.1rem 0.1rem 0.2rem var(--yellowt);
-}
 .post .single {
     margin: 2rem 0 2rem 0;
 }
