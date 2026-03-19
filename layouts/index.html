@@ -9,6 +9,9 @@
         {{ range $paginator.Pages }}
         <div class="post">
             <div class="post-header">
+                {{ if .Title }}
+                <h2 class="post-title">{{ .Title }}</h2>
+                {{ end }}
                 <a href="{{ .Permalink }}">
                     <time class="post-date-time"
                       datetime="{{ .Date.Format "2006-01-02 15:04:05 -0600" }}">
