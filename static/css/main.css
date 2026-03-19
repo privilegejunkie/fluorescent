@@ -283,6 +283,9 @@ time {
     filter: none;
     text-shadow: none;
 }
+.post a:has(time) {
+    color: var(--cyan);
+}
 .post a:has(time):hover {
     color: var(--cyan);
 }
