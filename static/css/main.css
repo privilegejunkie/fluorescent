@@ -162,8 +162,10 @@ header.mini #header-background {
 header.mini #header-metadata {
     align-items: center;
     display: flex;
+    flex-direction: row;
     gap: 0.5rem;
     justify-content: space-between;
+    margin: 0;
     width: 100%;
 }
 
