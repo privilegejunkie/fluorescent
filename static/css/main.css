@@ -363,6 +363,11 @@ nav ul {
 }
 .site-title a {
     color: var(--red);
+    
+    &:after {
+        animation: change-title 40s linear infinite;
+        content: "-rwxrwxrwx"
+    }
 }
 
 .social ul {

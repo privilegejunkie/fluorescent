@@ -7,6 +7,71 @@
         background-position: 0 -540px;
     }
 }
+@keyframes change-title {
+    0% {
+        content: "-rwx------";
+    }
+    5% {
+        content: "-rwxr-----";
+    }
+    10% {
+        content: "-rwxr----x";
+    }
+    15% {
+        content: "-rwxrw---x";
+    }
+    20% {
+        content: "-rwxrw-r-x";
+    }
+    25% {
+        content: "-rwxrw-rwx";
+    }
+    30% {
+        content: "-rwxrwxrwx";
+    }
+    35% {
+        content: "-rwxrwxr-x";
+    }
+    40% {
+        content: "-rwx-wxr-x";
+    }
+    45% {
+        content: "-rwx-w-r-x";
+    }
+    50% {
+      content: "-rwx-w---x";
+    }
+    55% {
+        content: "-rwx-w--wx";
+    }
+    60% {
+      content: "-rwx-w-rwx";
+    }
+    65% {
+        content: "-rwx-w-rw-";
+    }
+    70% {
+        content: "-rwxrw-rw-";
+    }
+    75% {
+        content: "-rwxr--rw-";
+    }
+    80% {
+        content: "-rwxr--rwx";
+    }
+    85% {
+        content: "-rwxr--r-x";
+    }
+    90% {
+       content: "-rwxr--r--";
+    }
+    95% {
+        content: "-rwx---r--";
+    }
+    100% {
+        content: "-rwx------";
+    }
+}
 @keyframes site-title-crt-flicker {
     0% {
         text-shadow: 0rem 0rem 0rem #dc322f80;
