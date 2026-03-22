@@ -218,6 +218,11 @@ time {
     max-width: 128px;
 }
 
+.about-body {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-header {
     display: flex;
     gap: 2rem;
