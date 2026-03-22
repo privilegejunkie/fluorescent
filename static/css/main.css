@@ -205,6 +205,26 @@ time {
     width: 100%;
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    width: var(--post-width);
+}
+
+.about-avatar {
+    max-width: 128px;
+}
+
+.about-header {
+    display: flex;
+    gap: 2rem;
+}
+
+.about-tagline {
+    display: flex;
+    flex-direction: column;
+}
+
 .avatar img {
     width: 100px;
     mask-image: radial-gradient(black, transparent 80%);
