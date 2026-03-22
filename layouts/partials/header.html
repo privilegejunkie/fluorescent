@@ -5,6 +5,7 @@
           <h1 class="site-title"><a id="site-title" href="{{ .Site.BaseURL }}"></a></h1>
           <nav>
               <ul>
+                  <li class="nav-item"><a href="{{ .Site.BaseURL }}/about">about</a></li>
                   {{ range .Site.Menus.main }}
                   <li class="nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
                   {{ end }}
