@@ -1,0 +1,16 @@
+{{ define "header" }}
+    {{ partial "mini_header.html" . }}
+{{ end }}
+{{ define "main" }}
+	<div class="photogrid">
+		{{- $list := where .Site.Pages ".Params.photos" "!=" nil -}}
+		{{- $len := (len $list) -}}
+		{{ range $index, $value := $list }}
+			<a href="{{ .Permalink }}">
+				{{ range first 1 .Params.photos }}
+					<img src="{{ . }}" loading="lazy"/>
+				{{ end }}
+			</a>
+		{{ end }}
+	</div>
+{{ end }}
