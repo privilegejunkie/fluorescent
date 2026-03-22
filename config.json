@@ -18,49 +18,14 @@
 	"outputFormats": {
 		"RSS": {
 			"baseName": "feed"
-		},
-		"JSON": {
-			"baseName": "feed"
-		},
-		"RSD": {
-			"mediaType": "application/xml",
-			"baseName": "rsd",
-			"isPlainText": true,
-			"notAlternative": true
-		},
-		"ArchiveJSON": {
-			"mediaType": "application/json",
-			"path": "archive",
-			"baseName": "index",
-			"isPlainText": true,
-			"notAlternative": true
-		},
-		"PhotosJSON": {
-			"mediaType": "application/json",
-			"path": "photos",
-			"baseName": "index",
-			"isPlainText": true,
-			"notAlternative": true
-		},
-		"PodcastXML": {
-			"mediaType": "application/rss+xml",
-			"baseName": "podcast",
-			"isPlainText": true,
-			"notAlternative": true
-		},
-		"PodcastJSON": {
-			"mediaType": "application/json",
-			"baseName": "podcast",
-			"isPlainText": true,
-			"notAlternative": true
 		}
 	},
 	"outputs": {
-		"home": [ "HTML", "RSS", "JSON", "RSD", "ArchiveJSON", "PhotosJSON", "PodcastXML", "PodcastJSON" ],
+		"home": [ "HTML", "RSS"],
 		"page": [ "HTML" ],
 		"section": [ "HTML" ],
-		"taxonomy": [ "HTML", "RSS", "JSON" ],
-		"term": [ "HTML", "RSS", "JSON" ]
+		"taxonomy": [ "HTML", "RSS"],
+		"term": [ "HTML", "RSS"]
 	},
 	"taxonomies": {
 		"category": "categories"
@@ -80,7 +45,7 @@
 	"enableRobotsTXT": true,
 	"languageCode": "[LANGUAGE]",
 	"defaultContentLanguage": "[LANGUAGE]",
-	"paginate": 25,
+	"paginate": 15,
 	"pluralizeListTitles": false,
 	"params": {
 		"description": "Follow <a href=\"https://micro.blog/[USERNAME]\">@[USERNAME] on Micro.blog</a>.",
@@ -104,6 +69,6 @@
 		"plugins_html": [],
 		"feeds": {
 			"bookmarks_json": "[FEEDS_BOOKMARKS_JSON]"
-		}		
+		}
 	}
 }
