@@ -109,6 +109,7 @@ body {
 
 footer {
     align-items: center;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;
