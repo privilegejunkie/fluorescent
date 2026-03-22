@@ -115,7 +115,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     mask-image: linear-gradient(to left, transparent 10%, black 20%, black 80%, transparent 90%);
-    min-height: 4rem;
     padding: 1rem 0 1rem 0;
     width: 100%;
 }
@@ -221,6 +220,7 @@ time {
 .about-body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-header {
@@ -278,6 +278,17 @@ time {
 .page {
   width: var(--post-width);
 }
+
+.page-end {
+    align-items: center;
+    border-top: 0.1rem solid var(--orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    mask-image: linear-gradient(to left, transparent 10%, black 20%, black 80%, transparent 90%);
+    width: 100%;
+}
+
 .photogrid {
     display: flex;
     flex-wrap: wrap;
