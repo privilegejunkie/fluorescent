@@ -1,0 +1,14 @@
+{{ $paginator := .Paginator }}
+{{ with $paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+<nav id="post-nav">
+	{{ range $paginator.Pagers }}
+	<li class="pagination__item">
+		<a href="{{ .URL }}" class="pagination__link">
+	    	{{ .PageNumber }}
+		</a>
+	</li>
+	{{ end }}
+</nav>
+{{ end }}
+{{ end }}
