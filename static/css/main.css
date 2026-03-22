@@ -287,6 +287,13 @@ time {
     width: 100%;
 }
 
+.pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: var(--post-width);
+}
+
 .photogrid {
     display: flex;
     flex-wrap: wrap;
