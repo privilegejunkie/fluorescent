@@ -170,10 +170,6 @@ nav ul {
     text-transform: lowercase;
 }
 
-time {
-    color: var(--link);
-}
-
 #header-background {
     animation: linear 10s infinite scanlines, 10s linear 0s infinite alternate wobble;
     background: url('../image/header.webp') top center repeat-y;
@@ -326,9 +322,7 @@ time {
     font-size: 0.8rem;
     text-align: left;
 }
-.post a {
-    color: var(--link);
-}
+
 .post a:hover {
     color: var(--yellow);
     filter: none;
@@ -336,6 +330,9 @@ time {
 }
 .post .single {
     margin: 2rem 0 2rem 0;
+}
+.post-content a {
+    color: var(--link);
 }
 .post-content>p {
     margin-block-start: 0.2rem;
@@ -356,10 +353,17 @@ time {
     font-weight: bold;
     margin-bottom: var(--post-header-margin-bottom);
 }
+.post-header a {
+    color: var(--yellow);
+}
 .single-margins {
     --post-margin-top: 2rem;
     --post-margin-bottom: 2rem;
     --post-header-margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
 }
 .post-title {
     color: var(--yellow);
