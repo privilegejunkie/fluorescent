@@ -10,6 +10,9 @@
         transition: 0.3s;
         width: 100%;
     }
+    .about-header {
+        flex-direction: column-reverse;
+    }
 }
 @media (max-width: 740px) {
     html {
