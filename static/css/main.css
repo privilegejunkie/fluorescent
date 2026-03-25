@@ -325,14 +325,17 @@ nav ul {
 
 .post a:hover {
     color: var(--yellow);
-    filter: none;
-    text-shadow: none;
 }
 .post .single {
     margin: 2rem 0 2rem 0;
 }
 .post-content a {
     color: var(--link);
+}
+.post-content a:hover {
+    color: var(--link);
+    filter: none;
+    text-shadow: none;
 }
 .post-content>p {
     margin-block-start: 0.2rem;
@@ -369,7 +372,7 @@ nav ul {
     color: var(--link);
 }
 .post-title {
-    color: var(--yellow);
+    color: var(--cyan);
 }
 .site-title {
     font-family: 'Courier Prime';
