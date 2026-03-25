@@ -356,7 +356,7 @@ nav ul {
 .post-header a {
     color: var(--yellow);
 }
-.single-margins {
+.single {
     --post-margin-top: 2rem;
     --post-margin-bottom: 2rem;
     --post-header-margin-bottom: 1rem;
@@ -364,6 +364,9 @@ nav ul {
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+}
+.single time.post-date-time {
+    color: var(--link);
 }
 .post-title {
     color: var(--yellow);
