@@ -295,6 +295,7 @@ time {
 }
 
 .photogrid {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
