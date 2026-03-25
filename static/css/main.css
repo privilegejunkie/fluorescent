@@ -2,6 +2,7 @@ html {
     /* base solarized colors */
     --yellow: #b58900;
     --yellowt: #b58900A0;
+    --yellowt2: #b5890050;
     --orange: #cb4b16;
     --oranget: #cb4b16A0;
     --red: #dc322f;
@@ -358,6 +359,9 @@ nav ul {
 }
 .post-header a {
     color: var(--yellow);
+}
+.post-header a:hover {
+    --link-shadow: var(--yellowt2);
 }
 .single {
     --post-margin-top: 2rem;
