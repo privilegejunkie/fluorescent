@@ -9,8 +9,10 @@
     {{- $siteTitle := ( .Site.Title ) -}}
     {{- if .IsHome -}}
       <title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }}- {{ .Site.Params.Subtitle }}{{ end }} </title>
+    {{- else if $title -}}
+      <title>{{ lower $title }} | {{ $siteTitle }}</title>
     {{- else -}}
-      <title>{{ $title }} - {{ $siteTitle }}</title>
+        <title>{{ $siteTitle }}</title>
     {{- end -}}
 
     <link rel="icon" type="image/jpeg" href="https://micro.blog/{{ .Site.Author.username }}/avatar.jpg" />

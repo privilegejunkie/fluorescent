@@ -234,6 +234,26 @@ nav ul {
     color: var(--yellow);
 }
 
+.archive {
+    width: var(--post-width);
+    font-size: 0.8rem;
+    font-family: Courier Prime;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 2rem 0 2rem 0;
+}
+.archive a {
+    color: var(--green);
+}
+.archive a:hover {
+    --link-shadow: var(--greent);
+}
+.archive p {
+    padding: 0;
+    margin: 0;
+}
+
 .avatar img {
     width: 100px;
     mask-image: radial-gradient(black, transparent 80%);
