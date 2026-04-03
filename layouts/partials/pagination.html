@@ -1,13 +1,11 @@
 {{ $paginator := .Paginator }}
 {{ with $paginator }}
 {{ if gt $paginator.TotalPages 1 }}
-<nav id="pagination">
+<nav class="pagination">
 	{{ range $paginator.Pagers }}
-	<div class="pagination-item">
-		<a href="{{ .URL }}" class="pagination__link">
-	    	{{ .PageNumber }}
-		</a>
-	</div>
+	<a href="{{ .URL }}" class="pagination-link">
+    	{{ .PageNumber }}
+	</a>
 	{{ end }}
 </nav>
 {{ end }}

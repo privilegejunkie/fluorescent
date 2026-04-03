@@ -306,9 +306,21 @@ nav ul {
 
 .pagination {
     align-items: center;
+    background: var(--background);
     display: flex;
     justify-content: center;
-    width: var(--post-width);
+    width: 100%;
+    font-family: Courier Prime;
+    font-weight: bold;
+    gap: 1rem;
+    padding: 2rem 0 1rem 0;
+}
+
+a.pagination-link {
+    color: var(--background);
+    background: var(--orange);
+    color: var(--background);
+    padding: 0.4rem 1rem 0.4rem 1rem;
 }
 
 .photogrid {
