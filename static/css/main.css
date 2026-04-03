@@ -255,8 +255,9 @@ nav ul {
 }
 
 .avatar img {
-    width: 100px;
-    mask-image: radial-gradient(black, transparent 80%);
+    filter: grayscale(0.4);
+    opacity: 60%;
+    width: 80px;
 }
 
 .footer-content {
