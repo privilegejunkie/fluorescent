@@ -317,10 +317,12 @@ nav ul {
 }
 
 a.pagination-link {
-    color: var(--background);
     background: var(--orange);
     color: var(--background);
     padding: 0.4rem 1rem 0.4rem 1rem;
+}
+a.pagination-link:hover {
+    --link-shadow: none;
 }
 
 .photogrid {
