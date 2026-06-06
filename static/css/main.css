@@ -254,6 +254,10 @@ nav ul {
     margin: 0;
 }
 
+.archive-summary img {
+    max-width: 100%;
+}
+
 .avatar img {
     filter: grayscale(0.4);
     opacity: 60%;
