@@ -253,7 +253,9 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-
+.archive-entry:not(:first-child) {
+    margin-top: 0.4rem;
+}
 .archive-summary img {
     max-width: 100%;
 }
